@@ -47,12 +47,32 @@
 
 //Short Syntax------------------------------>
 
-const name = "Marley";
-const age = 67;
+// const name = "Marley";
+// const age = 67;
 
-const user = {
-  name,
-  age,
-};
+// const user = {
+//   name,
+//   age,
+// };
 
-document.body.innerText = JSON.stringify(user);
+//document.body.innerText = JSON.stringify(user);
+
+// Optional Chaining ---------------------------------->
+
+// const user = {
+//   name: "Donald",
+//   age: 50,
+//   address: {
+//     street: "quac quac Road",
+//     number: 22,
+//   },
+// fullAddress() {
+//   return "full address";
+// },
+// };
+// document.body.innerText =
+//   user.address?.street.fullAddress?.() ?? "not informed";
+
+// const key = "name";
+
+// document.body.innerText = user[key];
