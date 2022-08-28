@@ -76,3 +76,17 @@
 // const key = "name";
 
 // document.body.innerText = user[key];
+
+// array methods
+
+/**
+ *map,
+ filter,
+ every*,
+ some*,
+ find*,
+ findIndex*,
+ reduce
+ */
+
+// Template Literals = `.....${}`.......................>
