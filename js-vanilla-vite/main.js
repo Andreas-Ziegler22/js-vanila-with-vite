@@ -90,3 +90,40 @@
  */
 
 // Template Literals = `.....${}`.......................>
+
+//Promises...............................................>
+
+// .then/.catch
+
+// fetch("https://api.github.com/users/Andreas-Ziegler22")
+//   .then((response) => {
+//     return response.json();
+//   })
+//   .then((body) => {
+//     console.log(body);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   })
+//   .finally(() => {
+//     console.log("go");
+//   });
+
+async function getDataGithub() {
+  try {
+    const response = await fetch(
+      "https://api.github.com/users/Andreas-Ziegler22"
+    );
+    const body = await response.json();
+
+    return body.name;
+    console.log(body);
+  } catch (err) {
+    console.log(err);
+  } finally {
+    console.log("go");
+  }
+}
+getDataGithub().then((name) => {
+  console.log(name);
+});
